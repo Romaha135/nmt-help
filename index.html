@@ -31,7 +31,43 @@
         <div>
             <h3>Безтолкове не може вивчить нічого сама. То хоч із цим може шось розумне вийде.😂😂</h3>
         </div>
+
+        <!-- Таймер відліку -->
+        <div class="countdown-container">
+            <h3>До НМТ залишилось:</h3>
+            <div class="countdown">
+                <p id="timer"></p>
+            </div>
+        </div>
     </main>
+    <script>
+        function startCountdown() {
+            const targetDate = new Date("2025-05-14T00:00:00").getTime(); // 14 травня 2025
+            const timerElement = document.getElementById("timer");
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const timeLeft = targetDate - now;
+
+                if (timeLeft <= 0) {
+                    timerElement.innerHTML = "А всьоооо. Лоооох. Уже почалося!";
+                    return;
+                }
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                timerElement.innerHTML = `${days} дн. ${hours} год. ${minutes} хв. ${seconds} сек.`;
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        startCountdown();
+    </script>
 
     <footer>
         <p>© 2025 Підготовка до НМТ | Успіхів у навчанні!</p>

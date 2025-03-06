@@ -204,3 +204,54 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+/* Таймер контейнер */
+.countdown-container {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.countdown-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.countdown-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #ff5e57;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
