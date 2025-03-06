@@ -255,3 +255,22 @@ footer p {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+
+/* For topics */
+.container {
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл між колонками */
+    align-items: stretch; /* Всі колонки рівної висоти */
+    gap: 20px; /* Відступ між категоріями */
+    padding: 20px; /* Відступ від боків */
+}
+
+.category {
+    flex: 1; /* Всі елементи займають рівну ширину */
+    background: #f9f9f9; /* Світлий фон для виділення */
+    padding: 15px;
+    border-radius: 8px; /* Закруглення кутів */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Тінь для ефекту глибини */
+}
+
+
