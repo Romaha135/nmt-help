@@ -142,6 +142,53 @@ li a:hover {
 
 }
 
+.plan-head {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222; /* Темний сірий колір */
+    background-color: #f8f9fa; /* Світло-сірий фон */
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    width: fit-content;
+    margin: 20px auto; /* Центрування */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #222; /* Чорний колір */
+    border-radius: 2px;
+    margin: 15px auto;
+    width: 50%;
+}
+
+
+/* Анімація */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+
 .btn:hover {
     background-color: #ff5e57; /* Яскравий червоний при наведенні */
 }
