@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Світло-сірий фон */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #222; /* Темно-сірий фон */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 15px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ff5e57; /* Яскравий червоний акцент */
+}
+
+.main-page-info {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.sub-main {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none; /* Прибирає стандартні маркери списку */
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+li {
+    background: #f9f9f9; /* Світлий фон */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Закруглені кути */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 40px; /* Відступ для іконки */
+}
+
+li::before {
+    content: "📌"; /* Іконка замість маркера */
+    font-size: 1.3rem;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+li:hover {
+    background: #eaeaea; /* Ефект при наведенні */
+    transition: 0.3s;
+}
+
+li strong {
+    color: #333;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+li a:hover {
+    color: #ff5e57; /* Змінюється колір при наведенні */
+    text-decoration: underline;
+}
+
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Додає відступи між кнопками */
+    flex-wrap: wrap; /* Якщо кнопки не вміщаються, вони переходять вниз */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #222; /* Темно-сірий фон */
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-test {
+    display: inline-block;
+    background-color: #222; /* Темно-сірий фон */
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    margin-left: 40vw;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: #ff5e57; /* Яскравий червоний при наведенні */
+}
+
+footer {
+    background-color: #222; /* Темно-сірий фон */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Завжди розміщується внизу */
+}
+
+footer p {
+    font-size: 1rem;
+}
