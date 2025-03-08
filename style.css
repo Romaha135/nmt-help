@@ -194,16 +194,37 @@ hr {
 }
 
 footer {
-    background-color: #222; /* Темно-сірий фон */
-    color: #fff;
+    background: #222; /* Темний фон */
+    color: #fff; /* Білий текст */
     text-align: center;
-    padding: 20px;
-    margin-top: auto; /* Завжди розміщується внизу */
+    padding: 15px 0;
+    font-size: 14px;
 }
 
-footer p {
-    font-size: 1rem;
+.footer-content {
+    max-width: 800px;
+    margin: auto;
 }
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
 
 /* Таймер контейнер */
 .countdown-container {
